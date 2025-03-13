@@ -470,3 +470,18 @@ textarea.contact-inputs {
     }
     
 }
+
+@media (max-width: 576px) {
+    /* Title CSS */
+    .title-text h1 {
+        font-size: 28px;
+    }
+
+    /* Contact CSS */
+    .contact-info > h6 {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 5px 0px;
+    }
+}
