@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iBarra's Portfolio</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Nav Bar -->
+    <header>
+      <a class="nav-logo" href="./">
+        <img class="logo" src="./images/icons/ibarra.svg" alt="logo">
+      </a>
+      
+      <nav>
+        <ul class="nav__links">
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+
+        <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+      </nav>
+    </header>
+    
+    <!-- Title Page -->
+    <Section class="background-title">
+      <div class="container col-xxl-8 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5">
+          <div class="pfp-img col-10 col-sm-8 col-lg-6 mx-auto">
+            <img src="./images/Crisostomo_Grad-Pic.png" class="d-block mx-lg-auto img-fluid profile" alt="profile pic">
+          </div>
+          <div class="col-lg-6 title-text">
+            <h1 class="fw-bold text-body-emphasis lh-1 mb-3">Carl Patrick Crisostomo</h1>
+            <h3>Computer Engineer</h3>
+            <p>As an aspiring web developer, I'm currently enhancing my background in front-end technologies and expanding my understanding of web development principles. I love blending creativity with functionality to build seamless digital experiences. My goal is to develop modern websites that not only look great but also enhance accessibility and user interaction.</p>
+          </div>
+        </div>
+      </div>
+    </Section>
+
+    <hr>
+
+    <!-- Works -->
+    <section>
+      <div class="container">
+        <h3 class="works-text">My Projects</h3>
+        <div class="works">
+          <a href="./logo.html">
+            <div class="card">
+              <img src="./images/thumbnail/logo-thumbnail.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">INDAK Logo</h5>
+                <p class="card-text">IDDC | Dance Organization</p>
+              </div>
+            </div>
+          </a>
+          
+  
+          <a href="https://imibarraaa.github.io/Crisostomo-CWD-Batch14/" target="_blank">
+            <div class="card">
+              <img src="./images/thumbnail/CWD-thumbnail.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Portfolio</h5>
+                <p class="card-text">Creative Web Design | Tesda</p>
+              </div>
+            </div>
+          </a>
+  
+          <a href="./posters.html">
+            <div class="card">
+              <img src="./images/thumbnail/poster-thumbnail.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Posters</h5>
+                <p class="card-text">
+                  MIO | Indak Dangal Dance Company
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer-sec">
+      <footer class="footer-container">
+        <div class="copyright-item">
+          <span>© 2025 Crisostomo, All Rights Reserved.</span>
+        </div>
+
+        <nav>
+          <ul class="footer-item">
+            <li>
+              <a href="https://github.com/iMiBarraaa" target="_blank">
+                <img class="footer-icon" src="./images/icons/github.svg" alt="github icon">
+              </a>
+            </li>
+
+            <li>
+              <a href="https://linkedin.com/in/carlcrsstm" target="_blank">
+                <img class="footer-icon" src="./images/icons/linkedin.svg" alt="linkedin icon">
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </section>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+      let menuList = document.querySelector(".nav__links");
+      menuList.style.maxHeight = "0px";
+
+      function toggleMenu() {
+          if (menuList.style.maxHeight === "0px") {
+              menuList.style.maxHeight = "300px";
+          } else {
+              menuList.style.maxHeight = "0px";
+          }
+      }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Nav Bar -->
+    <header>
+      <a class="nav-logo" href="./">
+        <img class="logo" src="./images/icons/ibarra.svg" alt="logo">
+      </a>
+
+      <nav>
+        <ul class="nav__links">
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+
+        <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+      </nav>
+    </header>
+
+    <!-- About Me -->
+    <section class="container">
+      <div class="card am-page">
+        <div class="card-header">
+          <span>About Me</span>
+        </div>
+        <div class="card-body">
+          <p>Hello! I’m Carl Patrick Crisostomo, also known as "iBarra". I graduated as a Computer Engineer at Pamantasan ng Cabuyao. I enjoy creating and designing websites as an aspiring web developer. I've been honing my talents and practicing ever since, eager to learn new things.
+          </p>
+          <p>Designing allows me to express myself creatively, which I enjoy. Creating visually appealing and functional websites is something I like. In order to improve what I do; I also continuously learn about new tools and technology. As an aspiring web developer, I want to continue developing and learning more about software programming. 
+          </p>
+          <p>I enjoy dancing and any form of arts alongside technology. I bring my creativity to my work since it's a major part of who I am. I'm eager to work on new projects and am always open to new opportunities. Together, let's create something amazing!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="container">
+      <div class="card am-page">
+        <div class="skills-ch card-header">
+          <span>Skills</span>
+          <button class="view-more-btn" onclick="openModal()"><span>View More ></span></button>
+        </div>
+        <div class="skills-section">
+          <div class="row icons">
+            <div class="col-6 col-sm-6 col-md-4 col-xxl-3 item html-icon">
+              <img src="./images/icons/icons8-html-5.svg" alt="html logo">
+              <h6>HTML</h6>
+            </div>
+  
+            <div class="col-6 col-sm-6 col-md-4 col-xxl-3 item css-icon">
+              <img src="./images/icons/icons8-css-logo.svg" alt="css logo">
+              <h6>CSS</h6>
+            </div>
+  
+            <div class="col-6 col-sm-6 col-md-4 col-xxl-3 item JS-icon">
+              <img src="./images/icons/icons8-javascript.svg" alt="JavaScript logo">
+              <h6>JavaScript</h6>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 col-xxl-3 item python-icon">
+              <img src="./images/icons/icons8-python.svg" alt="Python Logo">
+              <h6>Python</h6>
+            </div>
+  
+            <div class="col-6 col-sm-6 col-md-4 col-xxl-3 item java-icon">
+              <img src="./images/icons/icons8-java-logo.svg" alt="Java logo">
+              <h6>Java</h6>
+            </div>
+  
+            <div class="col-6 col-sm-6 col-md-4 col-xxl-3 item photoshop-icon">
+              <img src="./images/icons/photoshop-svgrepo-com.svg" alt="Photoshop Logo">
+              <h6>Photoshop</h6>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 col-xxl-3 item illustrator-icon">
+              <img src="./images/icons/illustrator-svgrepo-com.svg" alt="Illustrator Logo">
+              <h6>Illustrator</h6>
+            </div>
+            
+            <div class="col-6 col-sm-6 col-md-4 col-xxl-3 item mso-icon">
+              <img src="./images/icons/icons8-office-365.svg" alt="Microsoft Office Logo">
+              <h6>MS Office</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Structure -->
+    <div id="skillsModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2>All Skills</h2>
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-6 col-xxl-6 vms-item">
+            <h5>Web Development & Design</h5>
+            <ul>
+              <li>
+                <h6>HTML, CSS, and JavaScript</h6>
+              </li>
+              <li>
+                <h6>CSS Frameworks</h6>
+                <ul>
+                  <li>Bootstrap</li>
+                  <li>Materialize</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-xxl-6 vms-item">
+            <h5>Programming & Development Tools</h5>
+            <ul>
+              <li>
+                <h6>Basic Programming</h6>
+                <ul>
+                  <li>Java</li>
+                  <li>Python</li>
+                </ul>
+              </li>
+              <li>
+                <h6>Development Tools</h6>
+                <ul>
+                  <li>VS Code</li>
+                  <li>Github</li>
+                </ul>
+              </li>
+              <li>
+                <h6>Web Scraping</h6>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-xxl-6 vms-item">
+            <h5>Multimedia & Design</h5>
+            <ul>
+              <li>
+                <h6>Photo and Video Editing</h6>
+                <ul>
+                  <li>Photoshop</li>
+                  <li>Illustrator</li>
+                  <li>Canva</li>
+                  <li>CapCut</li>
+              </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-xxl-6 vms-item">
+            <h5>Technical & Productivity Skills</h5>
+            <ul>
+              <li>
+                <h6>Microsoft Office Literacy</h6>
+              </li>
+              <li>
+                <h6>Troubleshooting Skills</h6>
+              </li>
+              <li>
+                <h6>Basic Computer Network</h6>
+              </li>
+              <li>
+                <h6>Basic CAD Skills</h6>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <section class="footer-sec">
+      <footer class="footer-container">
+        <div class="copyright-item">
+          <span>© 2025 Crisostomo, All Rights Reserved.</span>
+        </div>
+
+        <nav>
+          <ul class="footer-item">
+            <li>
+              <a href="https://github.com/iMiBarraaa" target="_blank">
+                <img class="footer-icon" src="./images/icons/github.svg" alt="github icon">
+              </a>
+            </li>
+
+            <li>
+              <a href="https://linkedin.com/in/carlcrsstm" target="_blank">
+                <img class="footer-icon" src="./images/icons/linkedin.svg" alt="linkedin icon">
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </section>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let modal = document.getElementById("skillsModal");
+        if (modal) {
+          modal.style.display = "none"; // Ensure modal starts hidden
+        }
+      });
+
+      function openModal() {
+        let modal = document.getElementById("skillsModal");
+        if (modal) {
+          modal.style.display = "flex"; // Open modal when button is clicked
+        }
+      }
+
+      function closeModal() {
+        let modal = document.getElementById("skillsModal");
+        if (modal) {
+          modal.style.display = "none"; // Close modal when clicking close button
+        }
+      }
+
+      // Close modal when clicking outside the modal content
+      window.onclick = function (event) {
+        let modal = document.getElementById("skillsModal");
+        if (event.target === modal) {
+          closeModal();
+        }
+      };
+
+      document.addEventListener("DOMContentLoaded", function () {
+      // Get the current page URL path without query parameters or hashes
+      const currentPage = window.location.pathname.split("/").pop();
+
+      // Select all nav links
+      const navLinks = document.querySelectorAll(".nav__links a");
+
+      // Loop through links and add "active" class to the matching one
+      navLinks.forEach(link => {
+        // Extract the filename from the href attribute
+        const linkPage = link.getAttribute("href").split("/").pop();
+
+        if (linkPage === currentPage) {
+          link.classList.add("active");
+          }
+        });
+      });
+
+      let menuList = document.querySelector(".nav__links");
+      menuList.style.maxHeight = "0px";
+
+      function toggleMenu() {
+          if (menuList.style.maxHeight === "0px") {
+              menuList.style.maxHeight = "300px";
+          } else {
+              menuList.style.maxHeight = "0px";
+          }
+      }
+
+    </script>
+</body>
+</html>

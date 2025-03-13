@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posters</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/poster-style.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Nav Bar -->
+    <header>
+        <a class="nav-logo" href="./">
+          <img class="logo" src="./images/icons/ibarra.svg" alt="logo">
+        </a>
+  
+        <nav>
+          <ul class="nav__links">
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+
+          <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+    <main>
+
+    <section class="container">
+      <div class="posters-parent">
+        <!-- Congratulatory Posters -->
+        <div class="cp-item poster-grid">
+          <h3 class="poster-title">Congratulatory Posters</h3>
+          <div class="flex-container">
+            <div class="flex-item">
+              <img class="image-trigger img-fluid" src="./images/posters/grad-poster.png" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#posterModal">
+            </div>
+    
+            <div class="flex-item">
+              <img class="image-trigger img-fluid" src="./images/posters/BDAY-CELEB.png" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#posterModal-2">
+            </div>
+          </div>
+          <hr>
+        </div>
+
+        <!-- Audition Posters -->
+        <div class="ap-item poster-grid">
+          <h3 class="poster-title">Audition Posters</h3>
+          <div class="flex-container">
+            <div class="flex-item">
+              <img class="image-trigger img-fluid" src="./images/posters/CD-show off-poster.png" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#posterModal-3">
+            </div>
+    
+            <div class="flex-item">
+              <img class="image-trigger img-fluid" src="./images/posters/CD-tyrouts-poster.png" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#posterModal-4">
+            </div>
+    
+            <div class="flex-item">
+              <img class="image-trigger img-fluid" src="./images/posters/HHDC-auds-poster.png" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#posterModal-5">
+            </div>
+          </div>
+          <hr>
+        </div>
+
+        <!-- School Activities -->
+        <div class="sa-item poster-grid">
+          <h3 class="poster-title">School Activities</h3>
+          <div class="flex-container">
+            <div class="flex-item">
+              <img class="image-trigger img-fluid" src="./images/posters/WEB APP UI.png" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#posterModal-6">
+            </div>
+    
+            <div class="flex-item">
+              <img class="image-trigger img-fluid" src="./images/posters/NATIVE UI.png" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#posterModal-7">
+            </div>
+    
+            <div class="flex-item">
+              <img class="image-trigger img-fluid" src="./images/posters/HYBRID UI.png" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#posterModal-8">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    </main>
+
+    <!-- Modal Section -->
+
+    <!-- Grad Poster -->
+    <div class="modal fade" id="posterModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body text-center">
+            <img class="modal-image cp-modal" src="./images/posters/grad-poster.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bday Poster -->
+    <div class="modal fade" id="posterModal-2" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body text-center">
+            <img class="modal-image cp-modal" src="./images/posters/BDAY-CELEB.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CD Show Off -->
+    <div class="modal fade" id="posterModal-3" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body text-center">
+            <img class="modal-image ap-modal" src="./images/posters/CD-show off-poster.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CD Tryouts -->
+    <div class="modal fade" id="posterModal-4" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body text-center">
+            <img class="modal-image ap-modal" src="./images/posters/CD-tyrouts-poster.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- HHDC Audition Poster -->
+    <div class="modal fade" id="posterModal-5" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body text-center">
+            <img class="modal-image ap-modal" src="./images/posters/HHDC-auds-poster.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WEB APP UI -->
+    <div class="modal fade" id="posterModal-6" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body text-center">
+            <img class="modal-image sa-modal" src="./images/posters/WEB APP UI.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- NATIVE UI -->
+    <div class="modal fade" id="posterModal-7" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body text-center">
+            <img class="modal-image sa-modal" src="./images/posters/NATIVE UI.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- HYBRID UI -->
+    <div class="modal fade" id="posterModal-8" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body text-center">
+            <img class="modal-image sa-modal" src="./images/posters/HYBRID UI.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <section class="footer-sec">
+      <footer class="footer-container">
+        <div class="copyright-item">
+          <span>© 2025 Crisostomo, All Rights Reserved.</span>
+        </div>
+
+        <nav>
+          <ul class="footer-item">
+            <li>
+              <a href="https://github.com/iMiBarraaa" target="_blank">
+                <img class="footer-icon" src="./images/icons/github.svg" alt="github icon">
+              </a>
+            </li>
+
+            <li>
+              <a href="https://linkedin.com/in/carlcrsstm" target="_blank">
+                <img class="footer-icon" src="./images/icons/linkedin.svg" alt="linkedin icon">
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </section>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+      let menuList = document.querySelector(".nav__links");
+      menuList.style.maxHeight = "0px";
+
+      function toggleMenu() {
+          if (menuList.style.maxHeight === "0px") {
+              menuList.style.maxHeight = "300px";
+          } else {
+              menuList.style.maxHeight = "0px";
+          }
+      }
+    </script>
+</body>
+</html>
